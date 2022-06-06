@@ -1,0 +1,39 @@
+h2{
+  margin-bottom: 20px;
+}
+.control{
+  margin-top: 15px;
+}
+input{
+  width: 90%;
+  height: 30px;
+  padding: 0 20px;
+}
+.btn{
+  width: 10%;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.pokmn-container{
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.pkmn-card{
+  width: calc(100% / 3 - 30px);
+  margin: 15px;
+  border: 1px solid #333;
+  padding: 15px;
+}
+.btn-dettagli{
+  margin-top: 15px;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+}

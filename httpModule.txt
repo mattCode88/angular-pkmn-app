@@ -1,0 +1,8 @@
+- Il modulo HttpModule ci permette di gestire le comunicazioni con il server, per integrarlo nell' applicazione deve prima essere
+  importato in app.module.ts e aggiunto agli imports dello stesso.
+
+- A questo punto possiamo importarlo come dependency injection nei componenti in cui intendiamo utilizzarlo con sintassi:
+  private http: HttpClient
+
+- Il metodo get chiamato su http ritorna un oggetto di tipo observable(una promise) al quale dobbiamo applicare il metodo
+  subscribe per avere la risposta.

@@ -1,0 +1,16 @@
+<section class="section">
+  <h2>Dettagli Pokemon</h2>
+  <article class="pokemon-card" *ngIf="detail">
+    <div class="image-pokemon">
+      <img [src]="detail.sprites" alt="">
+    </div>
+    <div class="detail-pokemon">
+      <h3 class="name">{{ detail.name.toUpperCase() }}</h3>
+      <h4>Caratteristiche</h4>
+      <p>Altezza: {{ detail.height }}</p>
+      <p>Peso: {{ detail.weight }}</p>
+      <h4>Statistiche</h4>
+      <p *ngFor="let caratteristica of detail.stats">{{ caratteristica.stat.name}} {{ caratteristica.base_stat}}</p>
+    </div>
+  </article>
+</section>

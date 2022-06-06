@@ -1,0 +1,15 @@
+<h1>Home Page</h1>
+<h2>I pokemon più cercati!</h2>
+<div *ngIf="results">
+  <div *ngIf="results.length === 0">
+    <p class="error">Pokemon not found</p>
+  </div>
+  <div *ngIf="results.length > 0">
+    <div class="pokmn-container">
+      <div class="pkmn-card" *ngFor="let pokemon of results">
+        <h3>{{ pokemon.name }}</h3>
+        <button [routerLink]="['/pokemon', pokemon.name]" class="btn">DETTAGLI</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<section class="section">
+
+  <div class="log-container">
+    <div class="field">
+      <label for="">Username(user)</label>
+      <div>
+        <input type="text" #user>
+      </div>
+    </div>
+    <div class="field">
+      <label for="">Password(123)</label>
+      <div>
+        <input type="password" #password>
+      </div>
+    </div>
+    <button class="btn" (click)="login(user.value, password.value)">Login</button>
+  </div>
+</section>

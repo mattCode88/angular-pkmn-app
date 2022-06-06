@@ -1,0 +1,26 @@
+<section class="section">
+
+  <h2>Search Page</h2>
+  <div class="field">
+    <label for="">Search Pokemon</label>
+    <div class="control">
+      <input type="text" placeholder="es. bulbasaur" (keydown.enter)="submit(query.value)" [value]="q" #query>
+      <button class="btn" type="submit" (click)="submit(query.value)">SEARCH</button>
+    </div>
+  </div>
+
+  <div *ngIf="results">
+    <div *ngIf="results.length === 0">
+      <p class="error">Pokemon not found</p>
+    </div>
+    <div *ngIf="results.length > 0">
+      <div class="pokmn-container">
+        <div class="pkmn-card" *ngFor="let pokemon of results">
+          <h3>{{ pokemon.name }}</h3>
+          <button [routerLink]="['/pokemon', pokemon.name]" class="btn btn-dettagli">DETTAGLI</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

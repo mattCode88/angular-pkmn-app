@@ -1,0 +1,12 @@
+<section class="section">
+
+  <h2>Types Page</h2>
+
+  <div class="pokmn-container">
+    <div class="pkmn-card" *ngFor="let type of types">
+      <h3>{{ type.name }}</h3>
+      <button [routerLink]="['/types', type.name]" class="btn">DETTAGLI</button>
+    </div>
+  </div>
+
+</section>

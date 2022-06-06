@@ -1,0 +1,22 @@
+.section{
+  display: flex;
+  justify-content: center;
+}
+.log-container{
+  border: 2px solid #333;
+  width: fit-content;
+  padding: 20px 50px;
+  text-align: center;
+}
+.field>div{
+  margin: 15px 0;
+}
+.btn {
+  border: none;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+}

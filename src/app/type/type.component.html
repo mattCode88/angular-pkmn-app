@@ -1,0 +1,11 @@
+<section class="section">
+  <h2>Pokemon Filtered By Type: {{type}}</h2>
+
+  <div class="pokmn-container">
+    <div class="pkmn-card" *ngFor="let item of pokemonByType">
+      <h3>{{ item.pokemon.name }}</h3>
+      <button [routerLink]="['/pokemon', item.pokemon.name]" class="btn">DETTAGLI</button>
+    </div>
+  </div>
+
+</section>

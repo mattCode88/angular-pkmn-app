@@ -1,0 +1,28 @@
+.pokmn-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pkmn-card {
+  width: calc(100% / 3 - 30px);
+  margin: 15px;
+  border: 1px solid #333;
+  padding: 15px;
+}
+
+.btn {
+  margin-top: 15px;
+  width: auto;
+  height: auto;
+  padding: 10px 15px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-top: 15px;
+}
